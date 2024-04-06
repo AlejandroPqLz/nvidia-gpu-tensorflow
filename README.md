@@ -294,7 +294,23 @@ docker pull tensorflow/tensorflow:latest-gpu-jupyter
 
 #### 3.3 Build the container
 
-Since the project has a Dev Constainer configuration file in [.devcontainer](./.devcontainer) folder you just need to, in VSCode, open the project folder and click on the ```Reopen in Container``` button that appears in the bottom right corner of the window. Or yo can do it at any time by opening the command palette with `Ctrl+Shift+P` and type `Reopen in Container`.
+Before anything, you need to have change the username in the [devcontainer](./.devcontainer/devcontainer.json) to your username in the system, since the container will be created with the same user and group id as the one in the system.
+
+```json
+{
+    "name": "TensorFlow GPU Dev Container",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "args": {
+            "USER_NAME": "your_username", // Change this to your computer username
+            "USER_UID": "1000"
+        }
+    },
+    // Rest of the file
+}
+```
+
+After that, since the project has a Dev Constainer configuration file in [.devcontainer](./.devcontainer) folder you just need to, in VSCode, open the project folder and click on the ```Reopen in Container``` button that appears in the bottom right corner of the window. Or yo can do it at any time by opening the command palette with `Ctrl+Shift+P` and type `Reopen in Container`.
 
 </br>
 <p align="center">
