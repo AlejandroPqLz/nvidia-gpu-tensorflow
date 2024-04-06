@@ -300,13 +300,13 @@ Since the project has a Dev Constainer configuration file in [.devcontainer](./.
 
 </br>
 <p align="center">
-  <img src='./figures/readme_figures/reopen_in_container_vscode.png' alt= pop_up style="width: 50%;"/>
+  <img src='./figures/reopen_in_container_vscode.png' alt= pop_up style="width: 50%;"/>
   </br>
     <i>Pop-up VSCode message</i>
 </p>
 
 <p align="center">
-  <img src='./figures/readme_figures/reopen_in_container_command_palette.png' alt="command palette" style="width: 50%;" />
+  <img src='./figures/reopen_in_container_command_palette.png' alt="command palette" style="width: 50%;" />
     </br>
         <i>Command palette</i>
 </p>
@@ -331,7 +331,7 @@ To this date, the image is built with python `3.11.0rc1`, therefore you need to 
 And voilà! You have a container with all the dependencies installed and ready to go!:
 
 <p align="center">
-<img src='./figures/readme_figures/container_vscode.png' style="width: 80%;" />
+<img src='./figures/container_vscode.png' style="width: 80%;" />
 </p>
 
 After that, if any issue or problem arises, just rebuild the container using the command palette and selecting the `Rebuild Container` option.
