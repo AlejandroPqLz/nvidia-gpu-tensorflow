@@ -42,9 +42,7 @@
 
 ## :scroll: Introduction
 
-This repository is a guide for using NVIDIA GPU's on Windows (WSL2) and Linux (Ubuntu) and MacOs GPU's'
-
-. It is a step-by-step guide for setting up the environment and running the code on the GPU. The repository is divided into two parts, Windows (WSL2) and Linux (Ubuntu).
+This repository is a guide for using NVIDIA GPU's on Windows (WSL2) and Linux (Ubuntu) and MacOs GPU's with TensorFlow. It is a step-by-step guide for setting up the environment and running the code on the GPU. The repository is divided into two parts, Windows (WSL2) and Linux (Ubuntu).
 
 ## :computer: Setup
 
@@ -113,7 +111,7 @@ However, you can also use `Windows` with `WSL2` or `MacOS`. The requirements for
 ### 1. NVIDIA GPU Configuration (Windows and Linux)
 ---
 
-In order to use the GPU for training the model, you need to install the **NVIDIA drivers**, **CUDA** and **cuDNN**.
+In order to use the GPU with tensorflow, you need to install the **NVIDIA drivers**, **CUDA** and **cuDNN**.
 
 Eventhough the project is developed in Tensorflow and therefore not all CUDA and cuDNN versions are compatible with the version of Tensorflow used, for the GPU to work properly, the versions of CUDA and cuDNN and the NVIDIA drivers must be the most recent ones.
 
@@ -215,11 +213,11 @@ We will use conda to manage the python environment. You can install it following
     
 ```bash
     # Create the environment
-    conda create -n diffusion_env python=3.12 -y
+    conda create -n use_gpu python=3.12 -y
 ```
 ```bash
     # Activate the environment
-    conda activate diffusion_env
+    conda activate use_gpu
 ```
 
 #### 2.2  CUDA and cuDNN compatible versions
@@ -347,10 +345,10 @@ We will follow the same first steps as in the [Windows Subsystem for Linux (WSL2
     
 ```bash
     # Create the environment
-    conda create -n diffusion_env python=3.12 -y
+    conda create -n use_gpu python=3.12 -y
     
     # Activate the environment
-    conda activate diffusion_env
+    conda activate use_gpu
 
     # Install external dependencies
     pip install -e.
