@@ -205,7 +205,7 @@ After that open a terminal and run the following command to check the CUDA insta
 ### 2. Windows Subsystem for Linux (WSL2) Configuration
 ---
 
-After installing the NVIDIA drivers, CUDA and cuDNN, if you are going to develop the project on Windows, you need to set up WSL2 to use the GPU for training the model. To do this, follow the steps below:
+After installing the NVIDIA drivers, CUDA and cuDNN, if you are going to develop the project on Windows, you need to set up WSL2 to be able to use the GPU. To do this, follow the steps below:
 
 #### 2.1  Conda Environment
 
@@ -222,7 +222,7 @@ We will use conda to manage the python environment. You can install it following
 
 #### 2.2  CUDA and cuDNN compatible versions
 
-Since the model is implemented in Tensorflow, you need to install the versions of CUDA and cuDNN that are compatible with the version of Tensorflow you are using. For more information, visit the [Tensorflow versions compatibility](https://www.tensorflow.org/install/source?hl=es#gpu). For this project, since we are using Tensorflow 2.16.1, we need to install CUDA 12.3 and cuDNN 8.9, todo do so, just execute the following commands:
+Since we are setting up an enviroment for GPU use in Tensorflow, you need to install the versions of CUDA and cuDNN that are compatible with the version of Tensorflow you are using. For more information, visit the [Tensorflow versions compatibility](https://www.tensorflow.org/install/source?hl=es#gpu). For this project, since we are using Tensorflow 2.16.1, we need to install CUDA 12.3 and cuDNN 8.9, todo do so, just execute the following commands:
 
 ```bash
     # Install CUDA 12.3
