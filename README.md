@@ -365,3 +365,24 @@ TensorFlow does not support GPU acceleration on MacOS with CUDA and cuDNN, so yo
 ```
 
 Now you are ready to go!
+
+## :seedling: Contributing
+
+If you wish to make contributions to this project, please initiate the process by opening an issue or submitting a pull request that encapsulates your proposed modifications.
+
+> 1. Fork the Project
+> 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+> 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+> 4. Push to the Branch (`git push origin feature/AmazingFeature`)
+> 5. Open a Pull Request
+> 6. Wait for the PR to be reviewed
+> 7. If it's approved, the changes will be merged
+> 8. Done!
+
+## :newspaper_roll: License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+
+## :busts_in_silhouette: Contact
+
+Should you have any inquiries or require assistance, please do not hesitate to contact [Alejandro Pequeño Lizcano](pq.lz.alejandro@gmail.com).
