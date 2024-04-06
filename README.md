@@ -7,5 +7,8 @@
 |/__\|/__\|/__\|/_______\|/__\|/__\|/__\|/__\|/__\|/__\|/_______\|/__\|/__\|/__\|
 </pre>
 
+## Introduction
 
-A repository guide for using NVIDIA GPU's on WIndows (WSL2) and Linux (Ubuntu)
+This repository is a guide for using NVIDIA GPU's on Windows (WSL2) and Linux (Ubuntu). It is a step-by-step guide for setting up the environment and running the code on the GPU. The repository is divided into two parts, Windows (WSL2) and Linux (Ubuntu).
+
+
