@@ -22,7 +22,7 @@ requirements = [
     "gradio",
 ]  # Add or remove the required packages for the package to work properly
 
-setuptools.setup(
+setuptools.setup(  # Add the required information for the package
     name="project_name",
     version="0.0.1",
     author="Name LastName",

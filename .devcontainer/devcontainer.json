@@ -9,7 +9,7 @@
     },
     "runArgs": ["--gpus", "all"], // Enable GPU support in the container
     "customizations": {
-        "vscode": {
+        "vscode": { // Edit or remove the extensions and settings you want to install in the container
             "extensions": [
                 "ms-python.black-formatter", // mantain the black formatter in the first position to avoid conflicts with editor.defaultFormatter
                 "ms-python.python",
