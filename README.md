@@ -1,4 +1,4 @@
-# use-nvidia-gpu-tensorflow
+# nvidia-gpu-tensorflow
 
 <p align="center">
     <a href="https://docs.microsoft.com/en-us/windows/wsl/install" alt="WSL2">
@@ -34,15 +34,17 @@
 </p>
 
 <pre>
- ____ ____ ____ _________ ____ ____ ____ ____ ____ ____ _________ ____ ____ ____ 
-||u |||s |||e |||       |||n |||v |||i |||d |||i |||a |||       |||g |||p |||u ||
-||__|||__|||__|||_______|||__|||__|||__|||__|||__|||__|||_______|||__|||__|||__||
-|/__\|/__\|/__\|/_______\|/__\|/__\|/__\|/__\|/__\|/__\|/_______\|/__\|/__\|/__\|
+            _     _ _                                     _                             __ _               
+ _ ____   _(_) __| (_) __ _        __ _ _ __  _   _      | |_ ___ _ __  ___  ___  _ __ / _| | _____      __
+| '_ \ \ / / |/ _` | |/ _` |_____ / _` | '_ \| | | |_____| __/ _ \ '_ \/ __|/ _ \| '__| |_| |/ _ \ \ /\ / /
+| | | \ V /| | (_| | | (_| |_____| (_| | |_) | |_| |_____| ||  __/ | | \__ \ (_) | |  |  _| | (_) \ V  V / 
+|_| |_|\_/ |_|\__,_|_|\__,_|      \__, | .__/ \__,_|      \__\___|_| |_|___/\___/|_|  |_| |_|\___/ \_/\_/  
+                                  |___/|_|                                                                 
 </pre>
 
 ## :scroll: Introduction
 
-This repository is a guide for using NVIDIA GPU's on Windows (WSL2) and Linux (Ubuntu) and MacOs GPU's with TensorFlow. It is a step-by-step guide for setting up the environment and running the code on the GPU. The repository is divided into two parts, Windows (WSL2) and Linux (Ubuntu).
+This repository is a step-by-step guide for using NVIDIA GPU's on Windows (WSL2) and Linux (Ubuntu) and MacOs GPU's with **TensorFlow**.
 
 ## :computer: Setup
 
@@ -328,11 +330,12 @@ After that, since the project has a Dev Constainer configuration file in [.devco
 
 This will pull the `tensorflow-gpu-jupyter` image if not pulled before and build a container using the custom `Dockerfile` for the project with all the dependencies needed.
 
-In order to avoid posible issues with the container not detecting some versions of the libraries, just run the following command in the container terminal to install the external dependencies declared in the [setup.py](./setup.py) file:
-
-```bash
-pip install -e.
-```
+> <span style="color: red; font-size: 1.5em;">&#9888;</span>
+> **WARNING:** If the project presents a `setup.py` file, in order to avoid posible issues with the container not detecting some versions of the libraries, just run the following command in the container terminal to install the external dependencies declared in the [setup.py](./setup.py) file:
+>
+>```bash
+> pip install -e.
+>```
 
 Finally, when running any juptyer notebook, choose the python version that matches the one the image was built with. To check the python version, just run the following command in container terminal:
 
