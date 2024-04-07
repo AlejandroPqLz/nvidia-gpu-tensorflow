@@ -46,6 +46,23 @@
 
 This repository is a step-by-step guide for using NVIDIA GPU's on Windows (WSL2) and Linux (Ubuntu) and MacOs GPU's with **TensorFlow**.
 
+## :bookmark_tabs: Guide Structure
+
+## :open_file_folder: Structure
+
+The **structure** of the repository is as follows:
+
+```tree
+📦nvidia-gpu-tensorflow
+ ┣ 📂docs
+ ┃ ┣ 📜devcontainer.json
+ ┃ ┗ 📜Dockerfile
+ ┣ 📂figures
+ ┣ 📜LICENSE
+ ┣ 📜README.md
+ ┗ 📜setup.py
+```
+
 ## :computer: Setup
 
 It is **recommended** to use a **`Linux (Ubuntu)`** distribution for this project, since it is the most common OS for data science and artificial intelligence tasks and for that reason, NVIDIA GPU configurations are easier to set up.
@@ -245,7 +262,7 @@ And finally, set the environment variables to use the CUDA and cuDNN libraries e
 Once the environment is activated, you can install the [external dependencies](./setup.py) by running the following command:
     
 ```bash
-pip install -e.
+pip install -e. # if setup.py is present
 ```
 And you are ready to go!
 
@@ -334,7 +351,7 @@ This will pull the `tensorflow-gpu-jupyter` image if not pulled before and build
 > **WARNING:** If the project presents a `setup.py` file, in order to avoid posible issues with the container not detecting some versions of the libraries, just run the following command in the container terminal to install the external dependencies declared in the [setup.py](./setup.py) file:
 >
 >```bash
-> pip install -e.
+> pip install -e. # if setup.py is present
 >```
 
 Finally, when running any juptyer notebook, choose the python version that matches the one the image was built with. To check the python version, just run the following command in container terminal:
@@ -369,7 +386,7 @@ We will follow the same first steps as in the [Windows Subsystem for Linux (WSL2
     # Activate the environment
     conda activate use_gpu
 
-    # Install external dependencies
+    # Install external dependencies, if any
     pip install -e.
 ```
 
