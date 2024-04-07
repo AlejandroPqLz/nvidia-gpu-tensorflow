@@ -421,4 +421,4 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 
 ## :busts_in_silhouette: Contact
 
-Should you have any inquiries or require assistance, please do not hesitate to contact [Alejandro Pequeño Lizcano](pq.lz.alejandro@gmail.com).
+Should you have any inquiries or require assistance, please do not hesitate to open an issue.
