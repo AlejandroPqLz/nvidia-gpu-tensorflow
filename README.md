@@ -46,9 +46,9 @@
 
 This repository is a step-by-step guide for using NVIDIA GPU's on Windows (WSL2) and Linux (Ubuntu) and MacOs GPU's with **TensorFlow**. 
 
-It includes the installation of the necessary drivers, CUDA and cuDNN libraries, and the configuration of the environment to use the GPU with TensorFlow. Also, it includes the a [.devcontainer](./.devcontainer) congifuration folder to use as a template to develop your own TensorFlow project with GPU support and a [setup.py](./setup.py) file to install the external dependencies of the project.
+It includes the installation of the necessary drivers, CUDA and cuDNN libraries, and the configuration of the environment to use the GPU with TensorFlow. Also, it includes the a [.devcontainer](./.devcontainer) congifuration folder to use as a template to develop your own TensorFlow project with GPU support in Docker and a [setup.py](./setup.py) file to install the external dependencies of the project.
 
-Even though the .devcontainer folder and the setup.py file are templates, they are ready to use for a TensorFlow project with GPU support.
+Even though the **.devcontainer** folder and the **setup.py** file are templates, they are ready to use for a TensorFlow project with GPU support by just following the steps in the guide. Just check them before using them to make sure they are compatible with your project and to add your info to the setup.py file, if using one, and .devcontainer file.
 
 ## :bookmark_tabs: Guide Structure
 
