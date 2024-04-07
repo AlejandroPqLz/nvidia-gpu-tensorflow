@@ -46,7 +46,7 @@
 
 This repository is a step-by-step guide for using NVIDIA GPU's on Windows (WSL2) and Linux (Ubuntu) and MacOs GPU's with **TensorFlow**. 
 
-It includes the installation of the necessary drivers, CUDA and cuDNN libraries, and the configuration of the environment to use the GPU with TensorFlow. Also, it includes the a [.devcontainer](./.devcontainer) congifuration folder to use as a template to develop your own TensorFlow project with GPU support in Docker and a [setup.py](./setup.py) file to install the external dependencies of the project.
+It includes the installation of the necessary drivers, CUDA and cuDNN libraries, and the configuration of the environment to use the GPU with TensorFlow. Also, it includes the a [.devcontainer](./.devcontainer) configuration folder to use as a template to develop your own TensorFlow project with GPU support in Docker and a [setup.py](./setup.py) file to install the external dependencies of the project.
 
 Even though the **.devcontainer** folder and the **setup.py** file are templates, they are ready to use for a TensorFlow project with GPU support by just following the steps in the guide. Just check them before using them to make sure they are compatible with your project and to add your info to the setup.py file, if using one, and .devcontainer file.
 
@@ -69,7 +69,7 @@ The **structure** of the repository is as follows:
 
 It is **recommended** to use a **`Linux (Ubuntu)`** distribution for this project, since it is the most common OS for data science and artificial intelligence tasks and for that reason, NVIDIA GPU configurations are easier to set up.
 
-Not only that, but also because is the simplest way to configure and maintain the project code overtime since we will be using a Docker container, avoiding any compatibility issues with the OS and if the is any issue update or upgrade, it can be easily resolved by just rebuilding the container.
+Not only that, but also because it is the simplest way to configure and maintain the project code overtime since we will be using a Docker container, avoiding any compatibility issues with the OS and if the is any issue update or upgrade, it can be easily resolved by just rebuilding the container.
 
 However, you can also use `Windows` with `WSL2` or `MacOS`. The requirements for each OS are as follows:
 
@@ -167,7 +167,7 @@ Even though the guide is developed in Tensorflow and therefore not all CUDA and 
                     <code>sudo apt-get install nvidia-driver-&ltdriver_number&gt</code></li>
                     <li> Reboot the system: </br>
                     <code>reboot</code></li>
-                    <li>Chech the driver installation: </br>
+                    <li>Check the driver installation: </br>
                     <code>nvidia-smi</code></li>
                 </ul>
             </td>
@@ -200,7 +200,7 @@ Download and install the [CUDA toolkit](https://developer.nvidia.com/cuda-downlo
 **- WSL2:** [Install CUDA toolkit on WSL2](https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=WSL-Ubuntu&target_version=2.0&target_type=deb_local) </br>
 **- Ubuntu:** [Install CUDA toolkit on Ubuntu](https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=22.04&target_type=deb_local)
 
-After that open a terminal and run the following command to check the CUDA installation:
+After that, open a terminal and run the following command to check the CUDA installation:
 
 - For WSL2 and Ubuntu:
 
@@ -379,7 +379,7 @@ Finally, if you are going to develop the project on MacOS, you can follow the ne
 
 #### 4.1 Conda Environment
 
-We will follow the same first steps as in the [Windows Subsystem for Linux (WSL2) Configuration](#2-windows-subsystem-for-linux-wsl2-configuration) section, since we are goint to use a coda environment to manage the dependencies. Therefore, install miniconda following the [Miniconda instalation guide](https://docs.anaconda.com/free/miniconda/#quick-command-line-install). After installing miniconda, create a new environment with the following command:
+We will follow the same first steps as in the [Windows Subsystem for Linux (WSL2) Configuration](#2-windows-subsystem-for-linux-wsl2-configuration) section, since we are going to use a coda environment to manage the dependencies. Therefore, install miniconda following the [Miniconda installation guide](https://docs.anaconda.com/free/miniconda/#quick-command-line-install). After installing miniconda, create a new environment with the following command:
     
 ```bash
     # Create the environment
