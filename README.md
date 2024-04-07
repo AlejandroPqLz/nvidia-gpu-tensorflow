@@ -134,7 +134,7 @@ However, you can also use `Windows` with `WSL2` or `MacOS`. The requirements for
 
 In order to use the GPU with tensorflow, you need to install the **NVIDIA drivers**, **CUDA** and **cuDNN**.
 
-Eventhough the project is developed in Tensorflow and therefore not all CUDA and cuDNN versions are compatible with the version of Tensorflow used, for the GPU to work properly, the versions of CUDA and cuDNN and the NVIDIA drivers must be the most recent ones.
+Even though the guide is developed in Tensorflow and therefore not all CUDA and cuDNN versions are compatible with the version of Tensorflow used, for the GPU to work properly, the versions of CUDA and cuDNN and the NVIDIA drivers must be the most recent ones.
 
 #### 1.1 Install NVIDIA drivers:
 
@@ -243,7 +243,7 @@ We will use conda to manage the python environment. You can install it following
 
 #### 2.2  CUDA and cuDNN compatible versions
 
-Since we are setting up an enviroment for GPU use in Tensorflow, you need to install the versions of CUDA and cuDNN that are compatible with the version of Tensorflow you are using. For more information, visit the [Tensorflow versions compatibility](https://www.tensorflow.org/install/source?hl=es#gpu). For this project, since we are using Tensorflow 2.16.1, we need to install CUDA 12.3 and cuDNN 8.9, todo do so, just execute the following commands:
+Since we are setting up an enviroment for GPU use in Tensorflow, you need to install the versions of CUDA and cuDNN that are compatible with the version of Tensorflow you are using. For more information or if you are going to use another Tensorflow version, visit the [Tensorflow versions compatibility](https://www.tensorflow.org/install/source?hl=es#gpu), since for this guide, we are using Tensorflow 2.16.1 and as a result, we need to install CUDA 12.3 and cuDNN 8.9. Todo do so, just execute the following commands:
 
 ```bash
     # Install CUDA 12.3
@@ -307,7 +307,7 @@ sudo docker run --rm --runtime=nvidia --gpus all ubuntu nvidia-smi
 
 #### 3.2 Pull the `tensorflow-gpu-jupyter` image (Optional)
 
-This image contains all the correct dependencies for tensorflow with cuda and cudnn installed and a jupyter notebook server to develop the project (if not pull it will be automatically pulled in the next step). You can pull the image with the following command:
+This image contains all the correct dependencies for tensorflow with cuda and cudnn installed and a jupyter notebook server to develop the desired project (if not pull it will be automatically pulled in the next step). You can pull the image with the following command:
 
 ```bash
 docker pull tensorflow/tensorflow:latest-gpu-jupyter
@@ -404,7 +404,7 @@ Now you are ready to go!
 
 ## :seedling: Contributing
 
-If you wish to make contributions to this project, please initiate the process by opening an issue or submitting a pull request that encapsulates your proposed modifications.
+If you wish to make contributions to this guide, please initiate the process by opening an issue or submitting a pull request that encapsulates your proposed modifications.
 
 > 1. Fork the Project
 > 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
