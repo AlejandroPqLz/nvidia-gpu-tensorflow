@@ -132,9 +132,9 @@ However, you can also use `Windows` with `WSL2` or `MacOS`. The requirements for
 ### 1. NVIDIA GPU Configuration (Windows and Linux)
 ---
 
-In order to use the GPU with tensorflow, you need to install the **NVIDIA drivers**, **CUDA** and **cuDNN**.
+In order to use the GPU with TensorFlow, you need to install the **NVIDIA drivers**, **CUDA** and **cuDNN**.
 
-Even though the guide is developed in Tensorflow and therefore not all CUDA and cuDNN versions are compatible with the version of Tensorflow used, for the GPU to work properly, the versions of CUDA and cuDNN and the NVIDIA drivers must be the most recent ones.
+Even though the guide is developed in TensorFlow and therefore not all CUDA and cuDNN versions are compatible with the version of TensorFlow used, for the GPU to work properly, the versions of CUDA and cuDNN and the NVIDIA drivers must be the most recent ones.
 
 #### 1.1 Install NVIDIA drivers:
 
@@ -149,9 +149,9 @@ Even though the guide is developed in Tensorflow and therefore not all CUDA and 
         <tr>
             <td>
                 <ul>
-                    <li>Download the latest NVIDIA drivers </br> for your GPU on Windowns from the <a href="https://www.nvidia.com/download/index.aspx?lang=en-us">NVIDIA website</a></li>
+                    <li>Download the latest NVIDIA drivers </br> for your GPU on Windows from the <a href="https://www.nvidia.com/download/index.aspx?lang=en-us">NVIDIA website</a></li>
                     <li>Install the <code>.exe</code> file</li> and follow the instructions
-                    <li>Chech the driver installation: </br>
+                    <li>Check the driver installation: </br>
                     <code>nvidia-smi</code></li>
                 </ul>
             </td>
@@ -230,7 +230,7 @@ After installing the NVIDIA drivers, CUDA and cuDNN, if you are going to develop
 
 #### 2.1  Conda Environment
 
-We will use conda to manage the python environment. You can install it following the [Miniconda instalation guide](https://docs.anaconda.com/free/miniconda/#quick-command-line-install). After installing miniconda, create a new environment with the following command:
+We will use conda to manage the python environment. You can install it following the [Miniconda installation guide](https://docs.anaconda.com/free/miniconda/#quick-command-line-install). After installing miniconda, create a new environment with the following command:
     
 ```bash
     # Create the environment
@@ -243,7 +243,7 @@ We will use conda to manage the python environment. You can install it following
 
 #### 2.2  CUDA and cuDNN compatible versions
 
-Since we are setting up an enviroment for GPU use in Tensorflow, you need to install the versions of CUDA and cuDNN that are compatible with the version of Tensorflow you are using. For more information or if you are going to use another Tensorflow version, visit the [Tensorflow versions compatibility](https://www.tensorflow.org/install/source?hl=es#gpu), since for this guide, we are using Tensorflow 2.16.1 and as a result, we need to install CUDA 12.3 and cuDNN 8.9. Todo do so, just execute the following commands:
+Since we are setting up an environment for GPU use in TensorFlow, you need to install the versions of CUDA and cuDNN that are compatible with the version of TensorFlow you are using. For more information or if you are going to use another TensorFlow version, visit the [TensorFlow versions compatibility](https://www.tensorflow.org/install/source?hl=es#gpu), since for this guide, we are using TensorFlow 2.16.1 and as a result, we need to install CUDA 12.3 and cuDNN 8.9. To do so, just execute the following commands:
 
 ```bash
     # Install CUDA 12.3
@@ -307,7 +307,7 @@ sudo docker run --rm --runtime=nvidia --gpus all ubuntu nvidia-smi
 
 #### 3.2 Pull the `tensorflow-gpu-jupyter` image (Optional)
 
-This image contains all the correct dependencies for tensorflow with cuda and cudnn installed and a jupyter notebook server to develop the desired project (if not pull it will be automatically pulled in the next step). You can pull the image with the following command:
+This image contains all the correct dependencies for TensorFlow with CUDA and cuDNN installed and a Jupyter notebook server to develop the desired project (if not, pull it will be automatically pulled in the next step). You can pull the image with the following command:
 
 ```bash
 docker pull tensorflow/tensorflow:latest-gpu-jupyter
@@ -315,7 +315,7 @@ docker pull tensorflow/tensorflow:latest-gpu-jupyter
 
 #### 3.3 Build the container
 
-Before anything, you need to have change the username in the [devcontainer](./.devcontainer/devcontainer.json) to your username in the system, since the container will be created with the same user and group id as the one in the system.
+Before anything, you need to have changed the username in the [devcontainer](./.devcontainer/devcontainer.json) to your username in the system, since the container will be created with the same user and group id as the one in the system.
 
 ```json
 {
@@ -331,7 +331,7 @@ Before anything, you need to have change the username in the [devcontainer](./.d
 }
 ```
 
-After that, since the project has a Dev Constainer configuration file in [.devcontainer](./.devcontainer) folder you just need to, in VSCode, open the project folder and click on the ```Reopen in Container``` button that appears in the bottom right corner of the window. Or yo can do it at any time by opening the command palette with `Ctrl+Shift+P` and type `Reopen in Container`.
+After that, since the project has a Dev Container configuration file in [.devcontainer](./.devcontainer) folder you just need to, in VSCode, open the project folder and click on the ```Reopen in Container``` button that appears in the bottom right corner of the window. Or you can do it at any time by opening the command palette with `Ctrl+Shift+P` and type `Reopen in Container`.
 
 </br>
 <p align="center">
@@ -356,13 +356,13 @@ This will pull the `tensorflow-gpu-jupyter` image if not pulled before and build
 > pip install -e. # if setup.py is present
 >```
 
-Finally, when running any juptyer notebook, choose the python version that matches the one the image was built with. To check the python version, just run the following command in container terminal:
+Finally, when running any Jupyter notebook, choose the python version that matches the one the image was built with. To check the python version, just run the following command in container terminal:
 
 ```bash
 python --version
 ```
 
-To this date, the image is built with python `3.11.0rc1`, therefore you need to select the python `3.11.0` kernel in the jupyter notebook.
+To this date, the image is built with python `3.11.0rc1`, therefore you need to select the python `3.11.0` kernel in the Jupyter notebook.
 
 And voilà! You have a container with all the dependencies installed and ready to go!:
 
@@ -394,7 +394,7 @@ We will follow the same first steps as in the [Windows Subsystem for Linux (WSL2
 
 #### 4.2 TensorFlow for MacOS
 
-TensorFlow does not support GPU acceleration on MacOS with CUDA and cuDNN, so you need to install the its specific version for MacOS. To do so, just run the following command:
+TensorFlow does not support GPU acceleration on MacOS with CUDA and cuDNN, so you need to install the specific version for MacOS. To do so, just run the following command:
 
 ```bash
     pip install tensorflow-metal
